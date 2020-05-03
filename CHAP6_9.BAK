@@ -1,0 +1,22 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int n;
+	cout<<"Enter the number: ";
+	cin>>n;
+	int i;
+	double sum,m,s,div=0;
+	double pro = 1;
+	for(i=1;i<=n;i++)
+	{
+	   m = i+1;
+	   pro = i*m;
+	   s = i+m;
+	   div = s/pro;
+	   sum = sum+div;
+	}
+	cout<<sum;
+	getch();
+}

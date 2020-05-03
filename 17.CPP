@@ -1,0 +1,8 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	cout<<" Program = 20 \n Documentation = 23 \n Logic = 21 \n Flow chart = 18 ";
+	getch();
+}

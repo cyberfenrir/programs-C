@@ -1,0 +1,25 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+#include<ctype.h>
+void lower(char a[30])
+{
+    int i;
+    for(i=0; a[i]!='\0'; ++i)
+    {
+	if((islower(a[i])
+	{
+		  cout<<a[i];
+	}
+    }
+}
+void main()
+{
+	clrscr();
+	char a[30];
+	cout<<"Enter a sentence: ";
+	gets(a);
+	lower(a);
+	getch();
+}
+

@@ -1,0 +1,45 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a,b;
+	cout<<"\t\t\tMENU: ";
+	cout<<"\t\t+ To find the circle";
+	cout<<"\t\t- To find the square";
+	cout<<"\t\t* To find the rectangle";
+	char ch;
+	cout<<" Enter the choice";
+	cin>>ch;
+	double pi = (22.0/7.0);
+	double e;
+	switch(ch)
+	{
+		case 'c': double a;
+			  cout<<"Enter the radius of the circle :";
+			  cin>>a;
+			  e = pi*a*a;
+			  cout<<"The Area of the circle is:"<<e;
+			  break;
+
+		case 's': double s;
+			  cout<<"Enter the side of the square ";
+			  cin>>s;
+			  e = s*s;
+			  cout<<"The Area of the square is:"<<e;
+			  break;
+
+		case 'r': double l;
+			  double b;
+			  cout<<"Enter the length of the rectangle ";
+			  cin>>l;
+			  cout<<"Enter the breadth of the rectangle ";
+			  cin>>b;
+			  e = l*b;
+			  cout<<"The Area of the rectangle is:"<<e;
+			  break;
+
+		default:  cout<<"Invalid input of choice.";
+	}
+	getch();
+}

@@ -1,0 +1,37 @@
+#include<iostream.h>
+#include<conio.h>
+#include<math.h>
+void main()
+ {
+     clrscr();
+     int a;
+     int b;
+     int c;
+     cout<<"Enter the first side of the triangle:";
+     cin>>a;
+     cout<<"Enter the second side of the triangle:";
+     cin>>b;
+     cout<<"Enter the third side of the triangle:";
+     cin>>c;
+     if(((a+b)>c)&&((b+c)>a)&&((c+a)>b))
+     {
+	 cout<<"The triangle will be formed.\n";
+	 if((a==b)&&(b==c)&&(c==a))
+	 {
+	     cout<<"It is an equilateral triangle.";
+	 }
+	 else if(((a==b)&&(b!=c)&&(c!=a))||((c==b)&&(b!=a)&&(c!=a))||((a==c)&&(c!=b)&&(a!=b)))
+	 {
+	     cout<<"It is an isosceles triangle.";
+	 }
+	 else
+	 {
+	     cout<<"It is a scalene triangle.";
+	 }
+     }
+     else
+     {
+	  cout<<"The triangle will not be formed";
+     }
+     getch();
+ }

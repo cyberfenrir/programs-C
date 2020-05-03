@@ -1,0 +1,7 @@
+#include<iostream.h>
+void main()
+{
+   float num;
+   num = 4+(float)7/(int)2.0;
+   cout<<num;
+}

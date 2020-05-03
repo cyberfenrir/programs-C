@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+class Tourist
+{
+     int Cno;
+     char Ctype;
+     int PerKM;
+     int Distance;
+     Citycharge()
+     public: void Registercab();
+	     void Display();
+};
+void Tourist::Registercab()
+{
+     cout<<"Enter the Car number: ";
+     cin>>Cno;
+     cout<<"Enter the Car type: ";
+     cin>>Ctype;
+}
+void Tourist::
+

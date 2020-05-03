@@ -1,0 +1,32 @@
+#include<iostream.h>
+#include<conio.h>
+#include<stdio.h>
+void main()
+{
+	clrscr();
+	char x[100];
+	int i;
+	cout<<"Enter any String (max. 100) characters :\n";
+	gets(x);
+	for(i=0; x[i]!='\0'; i++)
+	{
+		if(isupper(x[i]))
+		{
+			x[i] = tolower(x[i]);
+		}
+		else if(islower(x[i]))
+		{
+			x[i] = toupper(x[i]);
+		}
+		else if(isdigit(x[i]))
+		{
+			x[i] = "*";
+		}
+		else
+		{
+			x[i] = "#";
+		}
+	}
+	cout<<endl<<"The converted string is: "<<x;
+	getch();
+}

@@ -1,0 +1,67 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int t;
+	cout<<"Enter the number: ";
+	cin>>t;
+	int d,c,w,o,h,f,v,s,e,g,x,z = 0;
+	c = t;
+	while(c>0)
+	{
+	   d = c%10;
+	   if(d==1)
+	   {
+	      o++;
+	   }
+	   else if(d==2)
+	   {
+	      w++;
+	   }
+	   else if(d==3)
+	   {
+	      h++;
+	   }
+	   else if(d==4)
+	   {
+	      f++;
+	   }
+	   else if(d==5)
+	   {
+	     v++;
+	   }
+	   else if(d==6)
+	   {
+	      s++;
+	   }
+	   else if(d==7)
+	   {
+	      e++;
+	   }
+	   else if(d==8)
+	   {
+	     g++;
+	   }
+	   else if(d==9)
+	   {
+	      x++;
+	   }
+	   else
+	   {
+	      z++;
+	   }
+	   c = c/10;
+	}
+	cout<<"The frequency of 0 is "<<z;
+	cout<<"The frequency of 1 is "<<o;
+	cout<<"The frequency of 2 is "<<w;
+	cout<<"The frequency of 3 is "<<h;
+	cout<<"The frequency of 4 is "<<f;
+	cout<<"The frequency of 5 is "<<v;
+	cout<<"The frequency of 6 is "<<s;
+	cout<<"The frequency of 7 is "<<e;
+	cout<<"The frequency of 8 is "<<g;
+	cout<<"The frequency of 9 is "<<x;
+	getch();
+}

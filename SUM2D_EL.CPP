@@ -1,0 +1,30 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int i, m, n, j;
+    int a[20][20];
+    int sum = 0;
+    cout<<"Enter the number of rows:";
+    cin>>m;
+    cout<<"Enter the number of columns:";
+    cin>>n;
+    for(i=0;i<m;i++)
+    {
+       for(j=0; j<n; j++)
+       {
+	    cin>>a[i][j];
+       }
+       endl;
+     }
+     for(i=0;i<m;i++)
+    {
+       for(j=0; j<n; j++)
+       {
+	    sum=sum+a[i][j];
+       }
+     }
+    cout<<"The sum is:"<<sum;
+    getch();
+}

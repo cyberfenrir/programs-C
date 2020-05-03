@@ -1,0 +1,23 @@
+#include<iostream.h>
+#include<conio.h>
+void cube(int n)
+{
+    int a,i,c;
+    cout<<"Enter the numbers one by one:";
+    for(i=0; i<n; i++)
+    {
+	cin>>a;
+	c = a*a*a;
+	cout<<"The cube is:"<<c;
+	a=0;
+	c=0;
+    }
+}
+void main()
+{
+   int n;
+   cout<<"How many numbers do you want to enter:";
+   cin>>n;
+   cube(n);
+   getch();
+}

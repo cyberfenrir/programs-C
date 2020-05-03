@@ -1,0 +1,34 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int i, A[10], j, n, min,t;
+    cout<<"Enter the number of elements of array";
+    cin>>n;
+    cout<<"Enter the array elements:";
+    for(i=0;i<n;i++)
+    {
+       cin>>A[i];
+    }
+    for(i=0; i<n-1; i++)
+    {
+       min = i;
+      for(j=i+1; j<n;j++)
+      {
+	 if(A[j]<A[min])
+	 {
+	     min =j;
+	  }
+       }
+       t = A[i];
+       A[i] = A[min];
+       A[min] = t;
+    }
+    cout<<"Sorted ";
+    for(i=0; i<n; i++)
+    {
+	cout<<A[i]<<" ";
+     }
+     getch();
+}

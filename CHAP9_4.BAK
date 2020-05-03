@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+#include<string.h>
+void main()
+{
+
+	clrscr();
+	int n[5];
+	int i;
+	char* ar[5];
+	cout<<"Enter the names of the students: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>ar[i]>>"\n";
+	}
+	cout<<"Enter the runs scored by the students: \n";
+	for(i=0;i<5;i++)
+	{
+		cin>>n[i]>>"\n";
+	}
+
+	cout<<"The names and the runs scored by the students are: \n";
+	for(i=0;i<5;i++)
+	{
+		cout<<"Name: "<<name[i]<<" Runs: "<<n[i]<<"\n";
+	}
+	getch();
+}

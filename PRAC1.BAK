@@ -1,0 +1,26 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+    clrscr();
+    int i,x;
+    cout<<"Enter the terms:";
+    cin>>x;
+    for(i=x; i>=1; i--)
+    {
+	for(j=1; j<=i; j++)
+	{
+	    cout<<i;
+	}
+	for(d=x-1; d>=i; d--)
+	{
+	    cout<<" ";
+	}
+	for(k=i;k>=1;j--)
+	{
+	   cout<<i;
+	}
+	cout<<endl
+    }
+    getch();
+}

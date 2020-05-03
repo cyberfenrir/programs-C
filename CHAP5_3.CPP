@@ -1,0 +1,15 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	double p;
+	cout<<"Enter the principal: ";
+	cin>>p;
+	double R1 = 5.0;
+	double R2 = 8.0;
+	double R3 = 10.0;
+	double a = (p*(1+(R1/100))*(1+(R2/100))*(1+(R3/100)));
+	cout<<"The amount after 3 years is: "<<a;
+	getch();
+}

@@ -1,0 +1,21 @@
+#include<iostream.h>
+#include<conio.h>
+void execute(int& x, int y = 200)
+{
+    int t = x+y;
+    x+ = t;
+    if(y!=200)
+    {
+	cout<<x<<y<<endl;
+     }
+}
+void main()
+{
+    int a = 50;
+    int b=20;
+    execute(b);
+    cout<<a<<b;<<endl;
+    execute(a,b);
+    cout<<a<<b<<endl;
+    getch();
+}

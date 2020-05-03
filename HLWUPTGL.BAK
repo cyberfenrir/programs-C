@@ -1,0 +1,31 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	cout<<"\"Hollow Upright Triangle Shape\"\n\n";
+	int i, j, k, g, z=1;
+	for(i=0; i<7; i++)
+	{
+		for(j=7; j>i; j--)
+		{
+			cout<<" ";
+		}
+		cout<<"*";
+		if(i!=0)
+		{
+			for(k=1; k<=z; k++)
+			{
+				cout<<" ";
+			}
+			cout<<"*";
+			z+=2;
+		}
+		cout<<endl;
+	}
+	for(i=0; i<=z+1; i++)
+	{
+		cout<<"*";
+	}
+	getch();
+}

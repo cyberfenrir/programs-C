@@ -1,0 +1,14 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	float d=10.0;
+	float st = 6.0;
+	cout<<"Enter the printed price: ";
+	cin>mp;
+	double sp = (((100-d)/100)*mp);
+	double a = (((100+st)/100)sp);
+	cout<<"The amount to be paid is: "<<a;
+	getch();
+}

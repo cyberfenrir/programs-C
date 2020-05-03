@@ -1,0 +1,38 @@
+#include<iostream.h>
+#include<conio.h>
+int satis(int a,int b, int c, int d)
+{
+	double sum1 = (a*a*a)+(b*b*b)+(c*c*c);
+	double sum2 = d*d*d;
+	if(sum1==sum2)
+	{
+	     return 0;
+	}
+	else
+	{
+	      return -1;
+	}
+}
+void main()
+{
+	clrscr();
+	int a,b,c,d;
+	cout<<"Enter the first element :";
+	cin>>a;
+	cout<<"Enter the second element :";
+	cin>>b;
+	cout<<"Enter the third element :";
+	cin>>c;
+	cout<<"Enter the fourth element :";
+	cin>>d;
+	int k = satis(a,b,c,d);
+	if (k==0)
+	{
+	    cout<<"The above equation is satisfied";
+	}
+	else
+	{
+	   cout<<"The above equation is not satisfied";
+	}
+	getch();
+}

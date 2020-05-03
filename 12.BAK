@@ -1,0 +1,28 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+  int B[16],A[4][4];
+  cout<<"Enter the array elements: "<<endl;
+  int i,j;
+  for(i=0; i<4; i++)
+  {
+     for(j=0; j<4; j++)
+     {
+	 cin>>A[i][j];
+      }
+   }
+   for(i=0; i<4; i++)
+  {
+     for(j=0; j<4; j++)
+     {
+	B[i]=A[i][j];
+      }
+   }
+   cout<<"The 1d array is : ";
+   for(i=0; i<16; i++)
+   {
+       cout<<B[i];
+   }
+   getch();
+}

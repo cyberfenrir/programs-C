@@ -1,0 +1,19 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	String n=" ";
+	char s=' ';
+	int r;
+	cout<<"Enter the name: ";
+	cin>>n;
+	cout<<"Enter the character: ";
+	cin>>s;
+	cout<<"Enter the number: ";
+	cin>>r;
+	cout<<"\n Name is: "<<n;
+	cout<<"\n character is: "<<s;
+	cout<<"\n number is: "<<r;
+	getch();
+}

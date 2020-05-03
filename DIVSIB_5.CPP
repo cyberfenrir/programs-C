@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a;
+	cout<<"Enter the number: ";
+	cin>>a;
+	if((a%5)==0)
+	{
+		cout<<"The number is divisible by 5. ";
+	}
+	else
+	{
+		cout<<"The number is not divisible by 5. ";
+	}
+	getch();
+}

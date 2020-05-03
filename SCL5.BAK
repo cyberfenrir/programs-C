@@ -1,0 +1,56 @@
+#include<iostream.h>
+#include<conio.h>
+void swap_dia(int a[50][50],int m, int n)
+{
+	int i, j, k,c;
+	if(m==n)
+	{
+	    for(i=0,j=0,k=m-1; j<m; i++,j++,k--)  //Swapping values of diagonals.
+	    {
+		c = a[j][i];
+		a[j][i] = a[j][k];
+		a[j][k] = c;
+	    }
+	    cout<<"The values after swapping the diagonal elements of the matrix are: \n";
+	    for(i=0; i<m; i++)         //Printing the values.
+	    {
+		for(j=0; j<m; j++)
+		{
+			cout<<a[i][j]<<" ";
+		}
+		cout<<"\n";
+	    }
+	}
+	else
+	{
+	    cout<<"The diagonals of the matrix cannot be swapped.";
+	}
+}
+void main()
+{
+	clrscr();
+	int a[50][50],i,m,n,j;
+	cout<<"Enter the row of matrix : ";
+	cin>>m;
+	cout<<"Enter the column of matrix (should be equal to row): ";
+	cin>>n;
+	cout<<"Enter the elements of matrix : \n";
+	for(i=0;i<m;i++)
+	{
+	     for(j=0;j<n;j++)
+	     {
+		 cin>>a[i][j];
+	     }
+	}
+	cout<<"Display matrix :-";
+	for(i=0;i<m;i++)
+	{
+	     cout<<endl;
+	     for(j=0;j<n;j++)
+	     {
+		 cout<<a[i][j]<<" ";
+	     }
+	}
+	swap_dia(a,m,n);
+	getch();
+}

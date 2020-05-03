@@ -1,0 +1,22 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	int a, b, s, d, p, q, r;
+	cout<<"Enter first number: ";
+	cin>>a;
+	cout<<"Enter second number: ";
+	cin>>b;
+	s=a+b;
+	cout<<"Sum is: "<<s;
+	d=a-b;
+	cout<<"Difference is: "<<d;
+	p=a*b;
+	cout<<"Product is: "<<p;
+	q=a/b;
+	cout<<"Quotient is: "<<q;
+	r=a%b;
+	cout<<"Remainder is: "<<r;
+	getch();
+}

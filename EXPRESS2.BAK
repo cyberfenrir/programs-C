@@ -1,0 +1,18 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	double u;
+	double t;
+	double f;
+	cout<<"Enter the initial velocity: ";
+	cin>>u;
+	cout<<"Enter the acceleration: ";
+	cin>>f;
+	cout<<"Enter the time: ";
+	cin>>t;
+	double x = (u*t)+((f*t*t)/2.0);
+	cout<<"\n The distance covered is: "<<x;
+	getch();
+}

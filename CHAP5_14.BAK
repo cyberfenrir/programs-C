@@ -1,0 +1,34 @@
+#include<iostream.h>
+#include<conio.h>
+void main()
+{
+	clrscr();
+	double i;
+	double a;
+	cout<<"Enter the annual salary of a person: ";
+	cin>>i;
+	if((i>=0)&&(i<=10000))
+	{
+		cout<<"No need to pay Income Tax.";
+	}
+	else if((a>=100001)&&(a<=150000))
+	{
+		a =((10.0*(i-100000.0))/100.0);
+		cout<<"The person has to pay Rs."<<a;
+	}
+	else if((a>=150001)&&(a<=250000))
+	{
+		a =(5000+(20.0*(i-150000.0))/100.0);
+		cout<<"The person has to pay Rs."<<a;
+	}
+	else if(a>250000)
+	{
+		a =(25000+(20.0*(i-250000.0))/100.0);
+		cout<<"The person has to pay Rs."<<a;
+	}
+	else
+	{
+		cout<<"Invalid input of annual salary.";
+	}
+	getch();
+}
